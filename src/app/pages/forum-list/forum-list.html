@@ -4,7 +4,7 @@
 
 <div class="p-4 mt-10">
     <app-post-card 
-        *ngFor="let post of variablePostMock"
+        *ngFor="let post of variablePostFromApi"
         [title]="post.title"
         [createdAt]="post.createdAt"
         [description]="post.description"
