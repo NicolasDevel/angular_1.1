@@ -1,9 +1,16 @@
 <div class="p-4">
     <app-post-card></app-post-card>
-    <app-post-card></app-post-card>
-    <app-post-card></app-post-card>
-    <app-post-card></app-post-card>
-    <app-post-card></app-post-card>
-    <app-post-card></app-post-card>
-    <app-post-card></app-post-card>
+</div>
+
+<div class="p-4 mt-10">
+    <app-post-card 
+        *ngFor="let post of variablePostMock"
+        [title]="post.title"
+        [createdAt]="post.createdAt"
+        [description]="post.description"
+        [authorAvatar]="post.authorAvatar"
+        [userAvatars]="post.userAvatars"
+        [comments]="post.comments"
+    >
+    </app-post-card>
 </div>
